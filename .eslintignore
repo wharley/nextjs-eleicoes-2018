@@ -1,0 +1,7 @@
+public
+build
+node_modules
+.next
+temp
+coverage
+test
