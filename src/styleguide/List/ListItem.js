@@ -1,5 +1,5 @@
-import React, { Fragment } from 'react'
-import { array } from 'prop-types'
+import React from 'react'
+import { string } from 'prop-types'
 import styled from 'styled-components'
 
 const StyledLi = styled.li`
@@ -33,16 +33,10 @@ const StyledLi = styled.li`
   }
 `
 
-const ListItem = ({ listItem }) => (
-  <Fragment>
-    { listItem.map(item => (
-      <StyledLi key={ item.description }>{ item.description }</StyledLi>
-    )) }
-  </Fragment>
-)
+const ListItem = ({ description }) => <StyledLi>{ description }</StyledLi>
 
 ListItem.propTypes = {
-  listItem: array
+  description: string
 }
 
 export default ListItem
