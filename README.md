@@ -11,11 +11,11 @@ As informações contidas nessa página foram retiradas do [Site Oficial do TSE]
 Este projeto tem o [código aberto](https://github.com/wharley/nextjs-eleicoes-2018) sob a [Licença MIT](https://pt.wikipedia.org/wiki/Licen%C3%A7a_MIT).
 > *This project has the [open source](https://github.com/wharley/nextjs-eleicoes-2018) under the [License MIT](https://pt.wikipedia.org/wiki/Licen%C3%A7a_MIT)*
 
-## Instalação *Setup*
+## Instalação - *Setup*
 ```
 yarn
 ```
-## Executando em desenvolvimento *Running - Development*
+## Executando em desenvolvimento - *Running in development*
 ```
 yarn dev
 ```
