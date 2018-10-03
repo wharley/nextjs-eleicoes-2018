@@ -39,6 +39,7 @@ export default class MyDocument extends Document {
     return (
       <html>
         <Head>
+          <link rel='icon' type='image/x-icon' href='static/favicons/favicon.ico' />
           <title>Eleições 2018</title>
           { this.props.styleTags }
         </Head>

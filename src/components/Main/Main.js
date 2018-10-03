@@ -1,36 +1,31 @@
 import React, { Fragment } from 'react'
-import { array } from 'prop-types'
+import { array, string } from 'prop-types'
 
-import List from '../../styleguide/List/List'
-import ListItem from '../../styleguide/List/ListItem'
 import Content from '../../styleguide/Content/Content'
 import Candidate from '../../styleguide/Candidate/Candidate'
 
-const listItem = [
-  { description: 'Presidente' },
-  { description: 'Governador' },
-  { description: 'Senador' },
-  { description: 'Federal' },
-  { description: 'Estadual' }
-]
+import Heading from '../Heading/Heading'
 
-const Main = ({ candidate }) => (
+const Main = ({ candidate, pathname }) => (
   <Fragment>
-    <List>
-      { listItem.map(item => (
-        <ListItem key={ item.description } description={ item.description } />
-      )) }
-    </List>
+    <Heading pathname={ pathname } />
     <Content>
       { candidate.map(data => (
-        <Candidate key={ data.id } name={ data.nomeUrna } number={ data.numero } />
+        <Candidate
+          key={ data.id }
+          name={ data.nomeUrna }
+          number={ data.numero }
+          coalition={ data.nomeColigacao }
+          fotoUrl={ data.fotoUrl }
+        />
       )) }
     </Content>
   </Fragment>
 )
 
 Main.propTypes = {
-  candidate: array
+  candidate: array,
+  pathname: string
 }
 
 export default Main
