@@ -1,0 +1,29 @@
+{
+  "name": "nextjs-eleicoes-2018",
+  "version": "1.0.0",
+  "description": "Eleições 2018",
+  "main": "index.js",
+  "author": "wharleyornelasjs <wharleyornelasjs@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start",
+    "lint": "./node_modules/.bin/eslint ."
+  },
+  "dependencies": {
+    "isomorphic-unfetch": "^3.0.0",
+    "next": "^7.0.0",
+    "prop-types": "^15.6.2",
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2",
+    "styled-components": "^3.4.9"
+  },
+  "devDependencies": {
+    "babel-plugin-styled-components": "^1.7.1",
+    "eslint": "^4.19.1",
+    "eslint-config-taller": "^2.0.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-node": "^7.0.1"
+  }
+}
